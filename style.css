@@ -17,7 +17,7 @@ body {
 }
 
 .main {
-  background-image: url('Images/background.png');
+  background-image: url('images/background.png');
   margin: 0;
   padding: 0;
 }
@@ -300,7 +300,7 @@ body {
 @media screen and (min-width: 1120px) {
   
   body {
-    background-image: url(Images/background.png);
+    background-image: url(images/background.png);
   }
 
   .header{
