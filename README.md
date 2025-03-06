@@ -1,1 +1,1 @@
-akarpoff308.githus.io
+akarpoff308.github.io
