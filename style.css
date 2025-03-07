@@ -1,8 +1,8 @@
 @font-face {
   font-family: "TT Lakes";
-  src: url("/Fonts/TTLakes-light.ttf") format("ttf");
-  src: url("/Fonts/TTLakes-light.woff") format("woff");
-  src: url("/Fonts/TTLakes-light.eot") format("eot"); 
+  src: url("/Fonts/TTLakes-Light.ttf") format("ttf");
+  src: url("/Fonts/TTLakes-Light.woff") format("woff");
+  src: url("/Fonts/TTLakes-Light.eot") format("eot"); 
 }
 
 @font-face {
@@ -26,6 +26,13 @@ body {
   display: flex;
   align-items: center;
   height: 88px;
+}
+
+.header__button:hover,
+.main__read-more:hover {
+  padding-top: 2px;
+  border-bottom: 1px solid #c74f51;
+  border-radius: 7px;
 }
 
 .header__devider, .header__devider-first {
@@ -128,7 +135,15 @@ body {
   margin-left: 0;
 }  
 
+.main__content {
+  justify-content: space-between;
+  width: 90vw;
+  justify-self: center;
+}
+
 .main__article {
+  display: flex;
+  flex-direction: column;
   padding: 0 3vw;
   font-family: "TT Lakes";
   font-size: 14px;
@@ -182,13 +197,11 @@ body {
   }
 
   .main__photo {
-    /*border: thin dotted red;*/
-    max-width: 100%;
+    width: 100vw;
     margin: 0;
   }   
 
   .services {
-    /*border: thin dotted red;*/
     margin: 0;
     height: 40px;
   }    
@@ -290,10 +303,15 @@ body {
     margin-top: 1em;
   }
 
+  .main__article {
+    width: 50%;
+  }
+
   .main__photo {
+    width: 1fr;
     border-radius: 5px;
-    max-width: 50%;
-    object-fit: scale-down;
+    width: 50%;
+    object-fit: contain;
   }
 }
 
@@ -301,6 +319,8 @@ body {
   
   body {
     background-image: url(images/background.png);
+    padding: 0;
+    margin: 0;
   }
 
   .header{
@@ -321,7 +341,10 @@ body {
     justify-content: space-between;
   }  
 
-  .headline__buttons {
+  .headline__actions {
+    font-family: "TT Lakes";
+    font-weight: 600;
+    font-size: 14px;
     justify-self: flex-end;
     align-self: flex-start;
   }
@@ -329,6 +352,12 @@ body {
   .headline__buttons * {
     display: inline-flex;
     align-items: center;
+  }
+
+  .headline__actions:hover {
+    border-bottom: 1px solid #c74f51;
+    border-radius: 7px;
+    padding-bottom: 15px;
   }
 
   .services {
@@ -350,12 +379,14 @@ body {
 
   .main__photo {
     border-radius: 5px;
-    width: 50vw;
+    width: 50%;
     object-fit: cover;
   }
 
   .main__article {
-    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
   }
   
 }
