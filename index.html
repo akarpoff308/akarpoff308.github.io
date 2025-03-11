@@ -9,85 +9,43 @@
   <body>
 
     <header class="header">
-
-      <section class="header__phone-portrait">
-
-        <button class="header__menu-button header__button">
-          <img src="images/burger.svg" alt="меню" class="header__menu" />
+      <section class="header__left">
+        <button class="header__button header__menu">
+          <img src="images/burger.png" alt="Меню" class="header__button-image">
         </button>
-
-          <a href="#" class="header__logo-link"
-          ><img src="images/logo.png" alt="лого" class="header__logo"
-        /></a>
-
-        <img src="images/line.png" alt="разделитель" class="header__devider-first" />
-
-        <button class="header__repair-button header__button">
-          <img
-          src="images/repair.svg"
-          alt="Услуги ремонта"
-          class="header__repair"
-        </button>
-        
-        <button class="header__status-button header__button">
-          <img
-            src="images/checkstatus.svg"
-            alt="Прроверить статус ремонта"
-            class="header__status"
-        </button>
-
+        <img src="images/logo.png" alt="Лого" class="header__logo">
       </section>
-
-
-      <section class="header__left-block">
-
-        <button class="header__menu-button header__button">
-          <img src="images/burger.svg" alt="меню" class="header__menu" />
-        </button>
-
-        <img src="images/line.png" alt="разделитель" class="header__devider-first" />
-
-        <a href="#" class="header__logo-link"
-          ><img src="images/logo.png" alt="лого" class="header__logo"
-        /></a>
-
-      </section>
-
-        <section class="header__center-block">
-
-          <button class="header__call-button header__button">
-            <img src="images/call.svg" alt="Позвонить" class="header__call">
+      
+      <section class="header__right-side">
+        <section class="header__addictional">
+          <button class="header__button">
+            <img src="images/call.svg" alt="Позвонить" class="header__button-image">
           </button>
-
-          <button class="header__chat-button header__button">
-            <img src="images/chat.svg" alt="Чат" class="header__chat">
+          <button class="header__button">
+            <img src="images/chat.svg" alt="Написать" class="header__button-image">
           </button>
-
-          <button class="header__profile-button header__button">
-            <img src="images/profile.svg" alt="Профиль" class="header__profile">
+          <button class="header__button">
+            <img src="images/profile.svg" alt="Профиль" class="header__button-image">
           </button>
-
-          <img src="images/line.png" alt="Разделитель" class="header__devider" />
           
-          <button class="header__repair-button header__button">
-            <img
-            src="images/repair.svg"
-            alt="Услуги ремонта"
-            class="header__repair"
-          </button>
+        </section>
+      
+        <img src="images/line.png" alt="Разделитель" class="header__devider">
 
-          <button class="header__status-button header__button">
-            <img
-              src="images/checkstatus.svg"
-              alt="Прроверить статус ремонта"
-              class="header__status"
+        <section class="header__right">
+          <button class="header__button">
+            Оставить заявку
+            <img src="images/repair.svg" alt="Оставить заявку" class="header__button-image">
+          </button>
+          <button class="header__button">
+            Статус ремонта
+            <img src="images/checkstatus.svg" alt="Проверка статуса" class="header__button-image">
           </button>
         </section>
-        
       </section>
       
     </header>
-
+      
     <main class="main">
       
       <section class="headline">
@@ -99,45 +57,28 @@
           />
           <h1 class="headline__title">Услуги и сервисы</h1>
         </section>
-
-        <section class="headline__buttons">
-          <label class = "headline__repair headline__actions">
-            Оставить заявку
-            <button class = "header__repair-button">
-              <img src = "images/repair.svg" class = "headline__repair-pic" alt = "Кнопка оставить заявку">
-            </button>
-          </label>
-
-          <label class = "headline__status headline__actions">
-            Статус ремонта
-            <button class = "header__status-button">
-              <img src = "images/checkstatus.svg" class = "headline__status-pic" alt = "Кнопка статус ремонта">
-            </button>
-          </label>
-        </section>
-
       </section>
+       
+      <nav class="nav">
 
-      <nav class="services">
-
-        <ul class="services-items">
-          <a href="#" class="services__brends-link"
-            ><li class="services__brends">Ремонтируемые бренды</li></a
+        <ul class="nav__items">
+          <a href="#" class="nav__brends-link nav__item"
+            ><li class="nav__brends">Ремонтируемые бренды</li></a
           >
-          <a href="#" class="services__devices-link"
-            ><li class="services__devices">Ремонтируемые устройства</li></a
+          <a href="#" class="nav__item"
+            ><li class="nav__devices">Ремонтируемые устройства</li></a
           >
-          <a href="#" class="services__prices-link"
-            ><li class="services__prices">Цены на услуги</li></a
+          <a href="#" class="nav__item"
+            ><li class="nav__prices">Цены на услуги</li></a
           >
-          <a href="#" class="services__adresses-link"
-            ><li class="services__adresses">Адреса сервисных центров</li></a
+          <a href="#" class="nav__item"
+            ><li class="nav__adresses">Адреса сервисных центров</li></a
           >
-          <a href="#" class="services__special-prices-link"
-            ><li class="services__special-prices">Специальные цены</li></a
+          <a href="#" class="nav__item"
+            ><li class="nav__special-prices">Специальные цены</li></a
           >
-          <a href="#" class="services__reviews-link"
-            ><li class="services__reviews">Отзывы</li></a
+          <a href="#" class="nav__item"
+            ><li class="nav__reviews">Отзывы</li></a
           >
         </ul>
       </nav>
@@ -164,10 +105,12 @@
             советуют нас родным и близким.
           </p>
 
-          <label class = "main__read-more main__link">
-            <img src="images/expand.png" alt = "Иконка читать далее" class = "main__read-more-icon">
+          <button class = "main__read-more">
+            <img src="images/expand.png" 
+            alt = "Иконка читать далее" 
+            class = "main__read-more-icon">
             <strong>Читать далее</strong>
-          </label>
+          </button>
 
         </article>
        
